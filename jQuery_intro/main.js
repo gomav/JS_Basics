@@ -1,6 +1,5 @@
-/* This is required for jQuery to work */ // ** Hint - e.preventDefault(); || return false; both prevent default behavior
-// document is whaterver you are targeting - i.e., button,
-// $(document).on('ready', function() {;
+//Part I
+
 $('#my-button').on('click', function(){
   $('.part1').append('<p>Behavior changed!</p>')
     console.log('You clicked the button!');
@@ -14,6 +13,8 @@ $('#my-button2').on('click', function(){
 
   $('.part1').append('<ul>My list<br></br><li>Item 1</li><li>Item 2</li><li>Item 3</li></ul>')
 });
+
+//Part II
 
 $('#pink').mouseover(function(){
   $('#pink').css('color', 'pink');
@@ -31,9 +32,7 @@ $('#link').click(function(e){
 });
 
 //Part III
-// $('#my-buttonlg').click(function(e){
-//   $("body").append("<h1>hello world!</h1>")
-// });
+
 $(function(){
   console.log("ready!");
   $("#middle-button").on('click', function() {
